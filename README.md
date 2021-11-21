@@ -1,7 +1,16 @@
 # Ombi unwatched movie requests
 
+## Setup keys
+
+Add keys to their respective key file.  
+
 ```shell
-export OMBI_API_KEY=<key>
-export TAUTULLI_APIKEY=<key>
-/usr/bin/python3 /home/vagrant/git/ombi/ombi-unwatched-requests-movies.py
+.api_keys/ombi.key  
+.api_keys/tautulli.key 
+```
+
+## Execution
+
+```shell
+/usr/bin/python3 ./ombi-unwatched-requests-movies.py
 ```

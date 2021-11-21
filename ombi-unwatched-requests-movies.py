@@ -11,14 +11,16 @@ from collections import Counter
 # OMBI vars
 # http://192.168.1.10:3579/swagger/index.html
 # export OMBI_API_KEY=
-ombi_api_key = os.environ['OMBI_API_KEY']
+# ombi_api_key = os.environ['OMBI_API_KEY']
+ombi_api_key = open('.api_keys/ombi.key', 'r').read()
 ombi_api_url = 'http://192.168.1.10:3579/api/v1/'
 ombi_headers = {'ApiKey': ombi_api_key, 'accept': 'application/json' }
 
 # Plex vars
 # https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/
 # export X_Plex_Token=
-plex_token = os.environ['X_Plex_Token']
+# plex_token = os.environ['X_Plex_Token']
+plex_token = open('.api_keys/plex.token', 'r').read()
 plex_api_url = 'http://192.168.1.10:32400/library/'
 
 # from plexapi.server import PlexServer
@@ -29,7 +31,8 @@ plex_api_url = 'http://192.168.1.10:32400/library/'
 # Tautulli vars
 # export TAUTULLI_APIKEY=
 tautulli_api_url = 'http://192.168.1.10:8282/api/v2'
-tautulli_apikey = os.environ['TAUTULLI_APIKEY']
+# tautulli_apikey = os.environ['TAUTULLI_APIKEY']
+tautulli_apikey = open('.api_keys/tautulli.key', 'r').read()
 tautulli_params = {}
 
 #Tautulli
