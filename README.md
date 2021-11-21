@@ -14,3 +14,7 @@ Add keys to their respective key file.
 ```shell
 /usr/bin/python3 ./ombi-unwatched-requests-movies.py
 ```
+
+## TODO
+
+Add TV Show (Season/Episode) requests
